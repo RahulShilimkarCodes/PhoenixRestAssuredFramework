@@ -1,0 +1,3 @@
+com\api\tests\GetUserDetailsAPITest.class
+com\api\tests\LoginAPITest.class
+com\api\pojo\UserCredentials.class

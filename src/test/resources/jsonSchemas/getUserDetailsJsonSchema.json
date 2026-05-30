@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/2020-12/schema",
+  "$id": "https://example.com/schemas/generated-schema.json",
+  "title": "Generated Schema",
+  "description": "Schema generated from JSON data",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string",
+      "minLength": 1,
+      "examples": [
+        "Success"
+      ],
+      "title": "Message"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "examples": [
+            4
+          ],
+          "title": "Id"
+        },
+        "first_name": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "fd"
+          ],
+          "title": "First_name"
+        },
+        "last_name": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "fd"
+          ],
+          "title": "Last_name"
+        },
+        "login_id": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "iamfd"
+          ],
+          "title": "Login_id"
+        },
+        "mobile_number": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "8899776655"
+          ],
+          "title": "Mobile_number"
+        },
+        "email_id": {
+          "type": "string",
+          "format": "email",
+          "examples": [
+            "mark@gmail.com"
+          ],
+          "title": "Email_id"
+        },
+        "password": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "5f4dcc3b5aa765d61d8327deb882cf99"
+          ],
+          "title": "Password"
+        },
+        "reset_password_date": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "title": "Reset_password_date"
+        },
+        "lock_status": {
+          "type": "integer",
+          "examples": [
+            0
+          ],
+          "title": "Lock_status"
+        },
+        "is_active": {
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "title": "Is_active"
+        },
+        "mst_role_id": {
+          "type": "integer",
+          "examples": [
+            5
+          ],
+          "title": "Mst_role_id"
+        },
+        "mst_service_location_id": {
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "title": "Mst_service_location_id"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "examples": [
+            "2021-11-03T08:06:23.000Z"
+          ],
+          "title": "Created_at"
+        },
+        "modified_at": {
+          "type": "string",
+          "format": "date-time",
+          "examples": [
+            "2021-11-03T08:06:23.000Z"
+          ],
+          "title": "Modified_at"
+        },
+        "role_name": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "FrontDesk"
+          ],
+          "title": "Role_name"
+        },
+        "service_location": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "Service Center A"
+          ],
+          "title": "Service_location"
+        }
+      },
+      "required": [
+        "id",
+        "first_name",
+        "last_name",
+        "login_id",
+        "mobile_number",
+        "email_id",
+        "password",
+        "lock_status",
+        "is_active",
+        "mst_role_id",
+        "mst_service_location_id",
+        "created_at",
+        "modified_at",
+        "role_name",
+        "service_location"
+      ],
+      "additionalProperties": false,
+      "title": "Data"
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ],
+  "additionalProperties": false
+}
