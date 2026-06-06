@@ -20,6 +20,7 @@ public class ConfigReaderManagerInputStream {
 		
 		environmentPassed = System.getProperty("env","qa");		//takes value from CLI, if not passed , default it as qa..
 		
+		/*
 		switch(environmentPassed.toLowerCase().trim())
 		{
 		case "dev" : filePath = "configs" + File.separator + "config.dev.properties";
@@ -30,6 +31,16 @@ public class ConfigReaderManagerInputStream {
 						break;
 		default  :  throw new RuntimeException("Incorrect Environment variable passed...please pass only QA,UAT,DEV...")  ;
 						//break;
+		}
+		*/
+		
+		//Use below Array operator from Java-14
+		switch(environmentPassed.toLowerCase().trim())
+		{
+		case "dev" -> filePath = "configs" + File.separator + "config.dev.properties";
+		case "qa" -> filePath = "configs" + File.separator + "config.qa.properties";
+		case "uat" -> filePath = "configs" + File.separator + "config.uat.properties";
+		default -> throw new RuntimeException("Incorrect Environment variable passed...please pass only QA,UAT,DEV...");
 		}
 
 		// Note:- use below optimized code to explain in interview using InputStream as

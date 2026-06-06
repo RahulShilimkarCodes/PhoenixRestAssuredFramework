@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-06T07:54:54 IST" name="Surefire suite" finished-at="2026-06-06T07:54:58 IST" duration-ms="4030">
+  <suite started-at="2026-06-06T08:31:16 IST" name="Surefire suite" finished-at="2026-06-06T08:31:18 IST" duration-ms="2713">
     <groups>
     </groups>
-    <test started-at="2026-06-06T07:54:54 IST" name="Surefire test" finished-at="2026-06-06T07:54:58 IST" duration-ms="4030">
+    <test started-at="2026-06-06T08:31:16 IST" name="Surefire test" finished-at="2026-06-06T08:31:18 IST" duration-ms="2713">
       <class name="com.api.tests.GetUserDetailsAPITest">
-        <test-method signature="getUserDetails()[pri:0, instance:com.api.tests.GetUserDetailsAPITest@2ddc8ecb]" started-at="2026-06-06T07:54:54 IST" name="getUserDetails" finished-at="2026-06-06T07:54:56 IST" duration-ms="2294" status="PASS">
+        <test-method signature="getUserDetails()[pri:0, instance:com.api.tests.GetUserDetailsAPITest@2ddc8ecb]" started-at="2026-06-06T08:31:16 IST" name="getUserDetails" finished-at="2026-06-06T08:31:18 IST" duration-ms="2046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserDetails -->
       </class> <!-- com.api.tests.GetUserDetailsAPITest -->
       <class name="com.api.tests.LoginAPITest">
-        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@4445629]" started-at="2026-06-06T07:54:56 IST" name="loginAPITest" finished-at="2026-06-06T07:54:58 IST" duration-ms="1700" status="PASS">
+        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@4445629]" started-at="2026-06-06T08:31:18 IST" name="loginAPITest" finished-at="2026-06-06T08:31:18 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
