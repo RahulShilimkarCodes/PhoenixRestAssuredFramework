@@ -1,4 +1,10 @@
 com\api\utils\AuthTokenProvider$1.class
+com\api\constants\Roles.class
+com\api\utils\AuthTokenProvider.class
 com\api\pojo\UserCredentials.class
+com\api\tests\CountAPITest.class
+com\api\utils\ConfigReaderManagerInputStream.class
+com\api\tests\MasterAPITest.class
+com\api\utils\ConfigReaderManager.class
 com\api\tests\GetUserDetailsAPITest.class
 com\api\tests\LoginAPITest.class
