@@ -1,3 +1,4 @@
+com\api\utils\AuthTokenProvider$1.class
+com\api\pojo\UserCredentials.class
 com\api\tests\GetUserDetailsAPITest.class
 com\api\tests\LoginAPITest.class
-com\api\pojo\UserCredentials.class
