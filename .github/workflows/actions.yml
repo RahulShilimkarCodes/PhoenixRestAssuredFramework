@@ -35,8 +35,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+   # - name: Execute Test Automation Framework
+
     - name: Execute Test Automation Framework
       run: mvn clean test -DsuiteXmlFile=${{ inputs.suiteXMLFile }} -Denv=${{ inputs.env }}
+
+    #  run: mvn clean test -DsuiteXmlFile=${{ inputs.suiteXMLFile }} -Denv=${{ inputs.env }}
     # run: mvn clean test -DsuiteXmlFile="${{ github.event.inputs.suiteXMLFile }}" -Denv="${{ github.event.inputs.env }}"
 
     - name: Upload a Build Artifact
