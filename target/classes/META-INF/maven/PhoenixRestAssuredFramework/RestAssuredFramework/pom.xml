@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>PhoenixRestAssuredFramework</groupId>
+	<artifactId>RestAssuredFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>RestAssuredFramework</name>
+	<description>Rest Assured Framework for Phoenix Application</description>
+
+	<properties>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- Source:
+		https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>6.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- used for serialization and de-serialization... -->
+		<!-- Source:
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.21.3</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Source:
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.21.3</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Source:
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.21</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<!-- used as testing library -->
+		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.12.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- helps validating json response schema-->
+		<!-- Source:
+		https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>6.0.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+	</dependencies>
+</project>

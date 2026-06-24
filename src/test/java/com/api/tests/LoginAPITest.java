@@ -9,6 +9,7 @@ import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import com.api.pojo.UserCredentials;
+import com.api.utils.SpecUtils;
 
 import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -18,9 +19,30 @@ public class LoginAPITest {
 	@Test
 	public void loginAPITest() throws IOException
 	{
+				
+		UserCredentials credentials = new UserCredentials("iamfd","password");
 		
+		given()
+			.spec(SpecUtils.requestSpecification(credentials))
+		.when()
+			.post("/login")
+		.then()
+			.assertThat()
+			.spec(SpecUtils.responseSpecification())
+			.body("message", Matchers.equalTo("Success"))
+			.body("data.token", Matchers.notNullValue())
+			.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("jsonSchemas/loginJsonSchema.json"));
+	}
+	
+}
 
-		
+
+/*
+ * 
+ * 
+ * @Test
+	public void loginAPITest() throws IOException
+	{
 		UserCredentials credentials = new UserCredentials("iamfd","password");
 		
 		given()
@@ -44,4 +66,5 @@ public class LoginAPITest {
 			.log().body();
 	}
 
-}
+*/
+
