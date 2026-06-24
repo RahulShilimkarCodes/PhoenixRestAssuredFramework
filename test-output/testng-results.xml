@@ -1,43 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-15T09:32:40 IST" name="Phoenix API Test Suite" finished-at="2026-06-15T09:32:47 IST" duration-ms="6796">
+  <suite started-at="2026-06-24T12:49:38 IST" name="Default suite" finished-at="2026-06-24T12:49:41 IST" duration-ms="2731">
     <groups>
     </groups>
-    <test started-at="2026-06-15T09:32:40 IST" name="Inwarranyty API Tests" finished-at="2026-06-15T09:32:47 IST" duration-ms="6796">
-      <class name="com.api.tests.GetUserDetailsAPITest">
-        <test-method signature="getUserDetails()[pri:0, instance:com.api.tests.GetUserDetailsAPITest@55141def]" started-at="2026-06-15T09:32:43 IST" name="getUserDetails" finished-at="2026-06-15T09:32:44 IST" duration-ms="749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUserDetails -->
-      </class> <!-- com.api.tests.GetUserDetailsAPITest -->
-      <class name="com.api.tests.MasterAPITest">
-        <test-method signature="invalidMasterAPITest()[pri:0, instance:com.api.tests.MasterAPITest@3270d194]" started-at="2026-06-15T09:32:45 IST" name="invalidMasterAPITest" finished-at="2026-06-15T09:32:46 IST" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidMasterAPITest -->
-        <test-method signature="masterAPITest()[pri:0, instance:com.api.tests.MasterAPITest@3270d194]" started-at="2026-06-15T09:32:46 IST" name="masterAPITest" finished-at="2026-06-15T09:32:47 IST" duration-ms="1040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- masterAPITest -->
-      </class> <!-- com.api.tests.MasterAPITest -->
-      <class name="com.api.tests.CountAPITest">
-        <test-method signature="verifyCountAPIResponse()[pri:0, instance:com.api.tests.CountAPITest@55182842]" started-at="2026-06-15T09:32:44 IST" name="verifyCountAPIResponse" finished-at="2026-06-15T09:32:45 IST" duration-ms="728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCountAPIResponse -->
-        <test-method signature="verifyResponseWithNoAuthenticationHeader()[pri:0, instance:com.api.tests.CountAPITest@55182842]" started-at="2026-06-15T09:32:45 IST" name="verifyResponseWithNoAuthenticationHeader" finished-at="2026-06-15T09:32:45 IST" duration-ms="663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyResponseWithNoAuthenticationHeader -->
-      </class> <!-- com.api.tests.CountAPITest -->
+    <test started-at="2026-06-24T12:49:38 IST" name="Default test" finished-at="2026-06-24T12:49:41 IST" duration-ms="2731">
       <class name="com.api.tests.LoginAPITest">
-        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@368f2016]" started-at="2026-06-15T09:32:40 IST" name="loginAPITest" finished-at="2026-06-15T09:32:43 IST" duration-ms="3219" status="PASS">
+        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPITest@128d2484]" started-at="2026-06-24T12:49:38 IST" name="loginAPITest" finished-at="2026-06-24T12:49:41 IST" duration-ms="2692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPITest -->
       </class> <!-- com.api.tests.LoginAPITest -->
-    </test> <!-- Inwarranyty API Tests -->
-  </suite> <!-- Phoenix API Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
