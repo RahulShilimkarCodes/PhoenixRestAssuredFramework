@@ -14,6 +14,7 @@ import io.restassured.specification.ResponseSpecification;
 
 public class SpecUtils {
 	
+
 	public static RequestSpecification requestSpecification()
 	{
 		//use's builder design pattern hence can be used as method chaining...
@@ -49,7 +50,7 @@ public class SpecUtils {
 //	}
 	
 	//Loosely coupled variant of above requestSpecification method...
-	public static RequestSpecification requestSpecification(Object userCreds)
+	public static RequestSpecification loginRequestSpecification(Object userCreds)
 	{
 		RequestSpecification requestSpec = new RequestSpecBuilder()
 				.setBaseUri(ConfigReaderManagerInputStream.getProperties("BASE_URI"))
@@ -73,6 +74,24 @@ public class SpecUtils {
 				.setContentType(ContentType.JSON)
 				.setAccept(ContentType.JSON)
 				.addHeader("Authorization", AuthTokenProvider.getLoginToken(role))
+				.log(LogDetail.URI)
+				.log(LogDetail.HEADERS)
+				.log(LogDetail.METHOD)
+				.log(LogDetail.BODY)
+				.build();
+		
+		return requestSpec;
+	}
+	
+	//below requestSpecification will get you the login token as well as part of authorization in header along with the payload
+	public static RequestSpecification requestSpecificationWithAuthorizationHeaderAndPayload(Roles role, Object payload)
+	{
+		RequestSpecification requestSpec = new RequestSpecBuilder()
+				.setBaseUri(ConfigReaderManagerInputStream.getProperties("BASE_URI"))
+				.setContentType(ContentType.JSON)
+				.setAccept(ContentType.JSON)
+				.addHeader("Authorization", AuthTokenProvider.getLoginToken(role))
+				.setBody(payload)
 				.log(LogDetail.URI)
 				.log(LogDetail.HEADERS)
 				.log(LogDetail.METHOD)

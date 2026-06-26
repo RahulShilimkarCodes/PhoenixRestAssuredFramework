@@ -23,7 +23,7 @@ public class LoginAPITest {
 		UserCredentials credentials = new UserCredentials("iamfd","password");
 		
 		given()
-			.spec(SpecUtils.requestSpecification(credentials))
+			.spec(SpecUtils.loginRequestSpecification(credentials))
 		.when()
 			.post("/login")
 		.then()

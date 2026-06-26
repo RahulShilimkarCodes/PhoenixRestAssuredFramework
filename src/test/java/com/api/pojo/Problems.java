@@ -1,0 +1,50 @@
+package com.api.pojo;
+
+public class Problems {
+	
+	private int id;
+	private String remark;
+	
+	public Problems()	{}
+	
+	public Problems(int id, String remark)
+	{
+		this.id = id;
+		this.remark = remark;
+	}
+	
+	public int getId()
+	{
+		return id;
+	}
+	
+	public void setId(int id)
+	{
+		this.id = id;
+	}
+
+	public String getRemark() {
+		return remark;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
+	@Override
+	public String toString() {
+		return "Problem [id=" + id + ", remark=" + remark + "]";
+	}
+
+}
+
+/*
+ * 
+ *     "problems": [
+        {
+            "id": 3,
+            "remark": "app crash"
+        }
+    ]
+    
+    */
