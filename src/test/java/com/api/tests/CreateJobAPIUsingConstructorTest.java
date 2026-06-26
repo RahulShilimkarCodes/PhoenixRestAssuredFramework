@@ -13,6 +13,7 @@ import com.api.pojo.Customer;
 import com.api.pojo.CustomerAddress;
 import com.api.pojo.CustomerProduct;
 import com.api.pojo.Problems;
+import com.api.utils.DateTimeUtil;
 import com.api.utils.SpecUtils;
 
 import io.restassured.RestAssured;
@@ -29,8 +30,8 @@ public class CreateJobAPIUsingConstructorTest {
 		CustomerAddress address = new CustomerAddress("Chinnaswamy","playground","Whitefield","RCB Camp",
 				"RCB Area","653434","India","Maharashtra");
         
-        CustomerProduct product = new CustomerProduct("2026-04-01T18:30:00.000Z","387864729828086","387864729828086","387864729828086",
-        		"2026-04-01T18:30:00.000Z",1,2);
+        CustomerProduct product = new CustomerProduct(DateTimeUtil.getTimeWithPastDays(10),"387864729828186","387864729828186","387864729828186",
+        		DateTimeUtil.getTimeWithPastDays(10),1,2);
        
         Problems problem = new Problems(3,"App Crash");
         List<Problems> problems = new ArrayList<>();

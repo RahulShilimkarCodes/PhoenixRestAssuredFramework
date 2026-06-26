@@ -16,6 +16,7 @@ import com.api.pojo.Customer;
 import com.api.pojo.CustomerAddress;
 import com.api.pojo.CustomerProduct;
 import com.api.pojo.Problems;
+import com.api.utils.DateTimeUtil;
 import com.api.utils.SpecUtils;
 
 import io.restassured.RestAssured;
@@ -32,9 +33,12 @@ public class CreateJobAPIUsingRecordTest {
 		CustomerAddressRecord address = new CustomerAddressRecord("Chinnaswamy","playground","Whitefield","RCB Camp",
 				"RCB Area","653434","India","Maharashtra");
         
-        CustomerProductRecord product = new CustomerProductRecord("2026-04-01T18:30:00.000Z","33786472788186","33786472788186","33786472788186",
-        		"2026-04-01T18:30:00.000Z",1,2);
+//        CustomerProductRecord product = new CustomerProductRecord("2026-04-01T18:30:00.000Z","33786472788186","33786472788186","33786472788186",
+//        		"2026-04-01T18:30:00.000Z",1,2);
        
+		CustomerProductRecord product = new CustomerProductRecord(DateTimeUtil.getTimeWithPastDays(10),"33786479788186","33786479788186","33786479788186",
+				DateTimeUtil.getTimeWithPastDays(10),1,2);
+		
         ProblemsRecord problem = new ProblemsRecord(3,"App Crash");
 	
 		CreateJobRecord jobPayload = new CreateJobRecord(0,2,1,1,customer,address,product,Arrays.asList(problem));		

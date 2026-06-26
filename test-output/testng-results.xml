@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-27T03:30:05 IST" name="Default suite" finished-at="2026-06-27T03:30:08 IST" duration-ms="2847">
+  <suite started-at="2026-06-27T03:55:23 IST" name="Default suite" finished-at="2026-06-27T03:55:26 IST" duration-ms="2996">
     <groups>
     </groups>
-    <test started-at="2026-06-27T03:30:05 IST" name="Default test" finished-at="2026-06-27T03:30:08 IST" duration-ms="2847">
-      <class name="com.api.tests.LoginAPIUsingRecordTest">
-        <test-method signature="loginAPITest()[pri:0, instance:com.api.tests.LoginAPIUsingRecordTest@128d2484]" started-at="2026-06-27T03:30:05 IST" name="loginAPITest" finished-at="2026-06-27T03:30:08 IST" duration-ms="2809" status="PASS">
+    <test started-at="2026-06-27T03:55:23 IST" name="Default test" finished-at="2026-06-27T03:55:26 IST" duration-ms="2996">
+      <class name="com.api.tests.CreateJobAPIUsingRecordTest">
+        <test-method signature="createJobAPITest()[pri:0, instance:com.api.tests.CreateJobAPIUsingRecordTest@459e9125]" started-at="2026-06-27T03:55:23 IST" name="createJobAPITest" finished-at="2026-06-27T03:55:26 IST" duration-ms="2954" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAPITest -->
-      </class> <!-- com.api.tests.LoginAPIUsingRecordTest -->
+        </test-method> <!-- createJobAPITest -->
+      </class> <!-- com.api.tests.CreateJobAPIUsingRecordTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

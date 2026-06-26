@@ -11,6 +11,7 @@ import com.api.pojo.Customer;
 import com.api.pojo.CustomerAddress;
 import com.api.pojo.CustomerProduct;
 import com.api.pojo.Problems;
+import com.api.utils.DateTimeUtil;
 import com.api.utils.SpecUtils;
 
 import io.restassured.RestAssured;
@@ -41,11 +42,11 @@ public class CreateJobAPITest {
         address.setState("Maharashtra");
         
         CustomerProduct product = new CustomerProduct();
-        product.setDop("2026-04-01T18:30:00.000Z");
-        product.setSerial_number("33783432783786");
-        product.setImei1("33783432783786");
-        product.setImei2("33783432783786");
-        product.setPopurl("2026-04-01T18:30:00.000Z");
+        product.setDop(DateTimeUtil.getTimeWithPastDays(10));
+        product.setSerial_number("33783432183786");
+        product.setImei1("33783432183786");
+        product.setImei2("33783432183786");
+        product.setPopurl(DateTimeUtil.getTimeWithPastDays(10));
         product.setProduct_id(1);
         product.setMst_model_id(2);
         
